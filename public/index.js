@@ -2,7 +2,9 @@ let transactions = [];
 let myChart;
 
 fetch("/api/transaction")
-  .then((response) => response.json())
+  .then((response) => {
+    return response.json();
+  })
   .then((data) => {
     // save db data on global variable
     transactions = data;
@@ -140,10 +142,10 @@ function sendTransaction(isAdding) {
     });
 }
 
-document.querySelector('#add-btn').addEventListener('click', function (event) {
-  event.preventDefault();
+document.querySelector('#add-btn').onclick = function () {
   sendTransaction(true);
-});
+};
+
 
 document.querySelector('#sub-btn').addEventListener('click', function (event) {
   event.preventDefault();
