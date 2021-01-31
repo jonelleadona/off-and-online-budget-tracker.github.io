@@ -4,9 +4,11 @@ const FILES_TO_CACHE = [
   '/',
   '/index.html',
   '/styles.css',
-  'db.js',
+  '/db.js',
   '/icons/icon-512x512.png',
-  '/index.js'
+  '/icons/icon-192x192.png',
+  '/index.js',
+  '/manifest.webmanifest',
 ];
 
 // install
