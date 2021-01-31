@@ -146,7 +146,6 @@ document.querySelector('#add-btn').onclick = function () {
 };
 
 
-document.querySelector('#sub-btn').addEventListener('click', function (event) {
-  event.preventDefault();
+document.querySelector('#sub-btn').addEventListener('click', function () {
   sendTransaction(false);
 });
